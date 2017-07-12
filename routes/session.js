@@ -2,8 +2,7 @@
 
 const bcrypt = require('bcrypt-as-promised');
 const express = require('express');
-const knex = require('../knex');
-
+const knex = require('../db/index');
 const router = express.Router();
 
 router.post('/session', (req, res, next) => {
@@ -55,5 +54,10 @@ router.post('/session', (req, res, next) => {
       next(err);
     });
 });
+
+router.delete('/', (req, res, next) => {
+ req.session = null
+ res.redirect('/')
+})
 
 module.exports = router;
