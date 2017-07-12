@@ -1,7 +1,7 @@
 'use strict';
 
 exports.seed = function(knex) {
-  return knex('users').del()
+  return knex('users')
     .then(() => {
       return knex('users').insert([{
         id: 1,
@@ -11,7 +11,7 @@ exports.seed = function(knex) {
         email: 'mikesmith4455@gmail.com',
         phone_number: '2063445677',
         profile_url: '',
-        hashed_password: ''
+        hashed_password: '$2a$12$LaKBUi8mCFc/9LiCtvwcvuNIjgaq9LJuy/NO.m4P5.3FP8zA6t2Va',
       },
       {
         id: 2,
@@ -21,7 +21,7 @@ exports.seed = function(knex) {
         email:'nottheadele@gmail.com',
         phone_number:'6149943434',
         profile_url: '',
-        hashed_password: '',
+        hashed_password: '$2a$12$LaKBUi8mCFc/9LiCtvwcvuNIjgaq9LJuy/NO.m4P5.3FP8zA6t2Va',
 
       },
       {
@@ -32,7 +32,7 @@ exports.seed = function(knex) {
         email: 'sarahewing@msn.com',
         phone_number: '2065546777',
         profile_url: '',
-        hashed_password: '',
+        hashed_password: '$2a$12$LaKBUi8mCFc/9LiCtvwcvuNIjgaq9LJuy/NO.m4P5.3FP8zA6t2Va',
       },
       {
         id: 4,
@@ -42,7 +42,7 @@ exports.seed = function(knex) {
         email: 'mphiggins04@gmail.com',
         phone_number: '2069456655',
         profile_url: '',
-        hashed_password: '',
+        hashed_password: '$2a$12$LaKBUi8mCFc/9LiCtvwcvuNIjgaq9LJuy/NO.m4P5.3FP8zA6t2Va',
       },
       {
         id: 5,
@@ -97,7 +97,7 @@ exports.seed = function(knex) {
       },
       {
         id: 10,
-        seller: true
+        seller: true,
         first_name: 'Hans',
         last_name: 'Lictenstein',
         email: 'Hanslictenstein@gmail.com',
@@ -147,7 +147,7 @@ exports.seed = function(knex) {
       },
       {
         id: 15,
-        seller: false,
+        seller: true,
         first_name: 'Emma',
         last_name: 'King',
         email: 'emmatking23@gmail.com',
