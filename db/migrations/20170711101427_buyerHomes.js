@@ -1,7 +1,7 @@
 'use strict';
 
 exports.up = function(knex) {
-  return knex.schema.createTable('buyerHomes', (table) => {
+  return knex.schema.createTable('buyer_homes', (table) => {
     table.increments();
     table.integer('home_id').references('id').inTable('homes');
     table.integer('buyer_id').references('id').inTable('users');
@@ -11,5 +11,5 @@ exports.up = function(knex) {
 
 
 exports.down = function(knex) {
-  return knex.schema.dropTable('buyerHomes');
+  return knex.schema.dropTable('buyer_homes');
 };

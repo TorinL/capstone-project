@@ -156,9 +156,5 @@ exports.seed = function(knex) {
         hashed_password: '',
       }
     ])
-    }).then(() => {
-      return knex.raw(
-        "SELECT setval('users_id_seq', (SELECT MAX(id) FROM users));"
-      )
     })
 };

@@ -1,7 +1,7 @@
 exports.seed = function(knex) {
-  return knex('buyerHomes')
+  return knex('buyer_homes')
     .then(() => {
-      return knex('buyerHomes').insert([
+      return knex('buyer_homes').insert([
       {
        home_id: 1,
        buyer_id: 8,
@@ -48,9 +48,5 @@ exports.seed = function(knex) {
       }
       ,
      ])
-    }).then(() => {
-      return knex.raw(
-        "SELECT setval('buyerHomes_id_seq', (SELECT MAX(id) FROM buyerHomes));"
-      )
     })
 };

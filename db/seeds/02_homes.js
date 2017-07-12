@@ -137,9 +137,5 @@ exports.seed = function(knex) {
         owner_id: 15,
       },
     ])
-    }).then(() => {
-      return knex.raw(
-        "SELECT setval('homes_id_seq', (SELECT MAX(id) FROM homes));"
-      )
     })
 };
