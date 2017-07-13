@@ -17,5 +17,35 @@
       url:'/dashboard',
       component:'dashboard'
     })
+
+    .state({
+      name: 'login',
+      url:'/login',
+      component:'login'
+    })
+
+    .state({
+      name: 'signup',
+      url:'/signup',
+      component:'signup'
+    })
+
+    .state({
+      name: 'survey',
+      url:'/survey',
+      component:'survey'
+    })
+
+    .state({
+      name: 'matches',
+      url:'/matches',
+      component:'matches'
+    })
+
+    .state({
+      name: 'listing',
+      url:'/listing',
+      component:'listing'
+    })
   }
 })()
