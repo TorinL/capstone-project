@@ -8,16 +8,30 @@
   <div class="list-of-featured-homes secondary-info">
     <div id="feature-homes-title">
     <h2>Featured Homes</h2>
-    <p>Text heres</p>
   </div>
-  <h5>{{$ctrl.featuredHomes}}</h5>
-  <div ng-repeat="homes in $ctrl.featuredHomes">
-    <img src="homes.img_url" alt="">
-    <h3>{{homes.location}}</h3>
+  <div class="" ng-repeat="homes in $ctrl.featuredHomes">
+    <a href="/listing">
+    <div class="featured-homes-image-card">
+    <img ng-src="{{homes.img_url}}">
+  </a>
+    </div>
+  <div class="featured-homes-info-card">
+    <div class="featured-homes-price">
+      <span>${{homes.home_value}}</span>
+    </div>
+    <div  class="featured-homes-address">
+      <span>{{homes.address}}</span>
+    </div>
+    <div class="featured-homes-details">
+      <span>{{homes.bedrooms}} Bed -</span>
+      <span>{{homes.bathrooms}} Bath -</span>
+      <span>{{homes.square_footage}} sqft</span>
+    </div>
   </div>
-    <img class="featured-homes" src="http://www.seattlemag.com/sites/default/files/newfiles/article/Mar2012/0312_realestatemadrona.jpg">
-    <img class="featured-homes" src="https://s3.amazonaws.com/citybuzz/2015/11/seattle-houses-for-sale-real-estate/seattle-houses-for-sale-2.jpg">
-    <p>
+  </div>
+
+
+
   </div>
   <div class="company-info">
     <div class="row">
