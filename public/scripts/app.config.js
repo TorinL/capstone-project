@@ -31,9 +31,15 @@
     })
 
     .state({
-      name: 'survey',
-      url:'/survey',
-      component:'survey'
+      name: 'buyerSurvey',
+      url:'/buyerSurvey',
+      component:'buyerSurvey'
+    })
+
+    .state({
+      name: 'sellerSurvey',
+      url:'/sellerSurvey',
+      component:'sellerSurvey'
     })
 
     .state({

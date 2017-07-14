@@ -1,9 +1,9 @@
 (function(){
 
   angular.module('app')
-  .component('survey', {
+  .component('buyerSurvey', {
     controller: controller,
-    templateUrl: './scripts/survey/survey.html'
+    templateUrl: './scripts/survey/buyerSurvey.html'
   })
 
   controller.$inject = ['API_BASE_URL', '$http', '$state']

@@ -7,10 +7,11 @@ exports.up = function(knex) {
     table.string('address').notNullable();
     table.string('zip_code').notNullable();
     table.text('img_url');
-    table.string('square_footage').notNullable();
-    table.string('bedrooms').notNullable();
-    table.string('bathrooms').notNullable();
-    table.integer('value').notNullable();
+    table.integer('square_footage').notNullable();
+    table.integer('bedrooms').notNullable();
+    table.integer('bathrooms').notNullable();
+    table.integer('home_value').notNullable();
+    table.text('description').notNullable();
     table.integer('owner_id').references('id').inTable('users');
     table.timestamps(true, true);
   })

@@ -1,5 +1,37 @@
-<div class="form-group seller-survey-question">
-  <label for="exampleInputFile">Upload a picture of your home!</label>
-  <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-  <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+<div class ="container buyer-survey">
+      <h2>Please list some details about your home</h2>
+  <div class ="row">
+   <form>
+    <div class="form-group buyers-survey-question">
+      <label for="location">Where is your home located?</label>
+       <input class="form-control" type="text">
+    </div>
+    <div class="form-group buyers-survey-question">
+      <label for="squareFeet">How many square feet is your home?</label>
+       <input class="form-control" type="number">
+    </div>
+    <div class="form-group buyers-survey-question">
+      <label for="bedrooms">How many bedrooms are in your home?</label>
+       <input class="form-control" type="number">
+    </div>
+    <div class="form-group buyers-survey-question">
+      <label for="bathrooms">How many bathrooms are in your home?</label>
+       <input class="form-control" type="number">
+    </div>
+    <div class="form-group buyers-survey-question">
+      <label for="homeValue">How much are you asking for your home?</label>
+       <input class="form-control" type="number">
+    </div>
+    <div class="form-group buyers-survey-question">
+  <label for="homeDescription">Please enter a brief description of your home!</label>
+  <textarea class="form-control" rows="4"></textarea>
+</div>
+    <div class="form-group seller-survey-question">
+      <label for="homePic">Upload a picture of your home!</label>
+      <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+      <small id="fileHelp" class="form-text text-muted">Users who upload a picture of their home find buyers faster than those who do not!</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+   </form>
+  </div>
 </div>

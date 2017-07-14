@@ -1,16 +1,76 @@
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 a {
   color: #00B7FF;
 }
 
+.container-fluid {
+  padding: 0px;
+}
+
+#action-item{
+  padding-bottom: 200px;
+}
+
+#action-item-button{
+  color: white;
+}
+
+.homepage-img {
+  background-image: url('https://goairportshuttle.com/images/site/slider-seattle-1.jpg');
+  background-size:cover;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+.navbar{
+  color: white;
+}
+
+#main-slogan{
+  padding-top: 200px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+.main-parent-div{
+  text-align: center;
+}
+
+.list-of-featured-homes{
+  text-align: center;
+}
+
+#feature-homes-title{
+  padding-top: 50px;
+}
+
+.featured-homes {
+  width: 250px;
+  height: 250px;
+}
+
 .buyer-survey {
+  padding-top: 50px;
+}
+
+.seller-survey {
   padding-top: 50px;
 }
 
 .buyers-survey-question{
 
+}
+
+.signupPage{
+  padding-top: 50px;
+}
+
+.log-in{
+  padding-top: 100px;
 }
