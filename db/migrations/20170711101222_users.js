@@ -9,7 +9,7 @@ exports.up = function(knex) {
     table.string('email').unique().notNullable();
     table.string('phone_number').notNullable();
     table.text('profile_url');
-    table.specificType('hashed_password', 'char(60)').notNullable().defaultTo('');
+    table.specificType('password', 'char(60)').notNullable().defaultTo('');
     table.timestamps(true, true);
   })
 };

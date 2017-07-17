@@ -13,8 +13,7 @@
 
 
     function $onInit () {
-      console.log('inside init fucntion');
-      $http.get(`${baseUrl}/db/homepage`).then((featuredHomes) => {
+      $http.get(`${baseUrl}/api/homepage`).then((featuredHomes) => {
         vm.featuredHomes = featuredHomes.data
         console.log(featuredHomes)
       })

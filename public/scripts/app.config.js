@@ -1,11 +1,10 @@
 (function() {
   angular.module('app').config(config)
 
-  config.$inject = ['$stateProvider', '$locationProvider']
-  function config($stateProvider, $locationProvider){
+  config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider']
+  function config($stateProvider, $urlRouterProvider, $locationProvider){
     $locationProvider.html5Mode(true)
     $stateProvider
-
     .state({
       name: 'base',
       url: '/',
@@ -15,12 +14,14 @@
     .state({
       name: 'dashboard',
       url:'/dashboard',
-      component:'dashboard'
+      component:'dashboard',
+      // requiresLogin: true
     })
 
     .state({
       name: 'login',
       url:'/login',
+      params: { notification: null },
       component:'login'
     })
 

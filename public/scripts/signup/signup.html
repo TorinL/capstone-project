@@ -1,36 +1,36 @@
 <div class = "container signupPage">
-<form>
+<form ng-submit="$ctrl.signup($ctrl.signupOpts)">
   <div class="form-group sign-up">
     <label for="userFirstName">First Name</label>
-    <input class="form-control" type="text">
+    <input class="form-control" type="text" ng-model="$ctrl.signupOpts.first_name">
   </div>
   <div class="form-group sign-up">
     <label for="userFirstName">Last Name</label>
-    <input class="form-control" type="text">
+    <input ng-model="$ctrl.signupOpts.last_name" class="form-control" type="text">
   </div>
   <div class="form-group sign-up">
     <label for="userEmail">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <input ng-model="$ctrl.signupOpts.email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
   </div>
   <div class="form-group sign-up">
     <label for="userPassword">Password</label>
-      <input type="password" class="form-control" placeholder="Password">
+      <input ng-model="$ctrl.signupOpts.password" type="password" class="form-control" placeholder="Password">
   </div>
   <div class="form-group sign-up">
     <label for="userPhone">Phone Number</label>
-      <input class="form-control" type="tel" placeholder="(111) 111-111">
+      <input ng-model="$ctrl.signupOpts.phone_number" class="form-control" type="tel" placeholder="(123) 456-1111">
   </div>
   <fieldset class="form-group sign-up">
     <legend>Are you a Seller or a Buyer?</legend>
       <div class="form-check">
         <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" value="Seller">
+          <input type="radio" class="form-check-input" name="optionsRadios" value= true>
           I am selling my home
         </label>
       </div>
       <div class="form-check">
         <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" value="Buyer">
+          <input ng-model="$ctrl.signupOpts.seller" type="radio" class="form-check-input" name="optionsRadios" value= false>
           I am buying a home
         </label>
       </div>
