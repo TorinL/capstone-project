@@ -68,19 +68,25 @@ a {
 
 .company-info{
   background-color:#7d8799;
-  display: inline-block;
 }
 
 .buyer-survey {
-  padding-top: 50px;
+  padding-top: 100px;
+  text-align: center;
 }
 
 .seller-survey {
   padding-top: 50px;
 }
 
-.buyers-survey-question{
+.buyer-form-panel{
+  display: block;
+  text-align: center;
+  padding-top: 25px;
+}
 
+.form-panel{
+  display: inline-block;;
 }
 
 .signupPage{
@@ -96,10 +102,26 @@ a {
 }
 
 .dashboard-edit-button{
-  margin-left: 130px;
+  margin-left: 30px;
   margin-top: 20px;
 }
 
-.profile-pic {
-  border: solid;
+.dashboard-side-panel{
+  padding-left: 100px;
+}
+
+.dashboard-info{
+  padding-left: 40px;
+}
+
+.dashboard-about-me{
+  padding-top: 40px;
+}
+
+.listing-page{
+  padding-top: 100px;
+}
+
+.listing-image{
+  text-align: center;
 }

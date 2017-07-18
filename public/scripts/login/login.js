@@ -9,14 +9,6 @@
   controller.$inject = ['API_BASE_URL', '$http', '$state', '$stateParams', 'SessionsService', 'UsersService']
   function controller (baseUrl, $http, $state, $stateParams, SessionsService, UsersService){
     const vm = this
-    vm.$onInit = $onInit
-
-
-
-
-    function $onInit () {
-      console.log('inside my login component')
-    }
 
     vm.reset = function () {
     vm.response = vm.notification = ''
@@ -29,12 +21,10 @@
     vm.session = SessionsService
 
     vm.login = function (user) {
-      debugger
       SessionsService.login(user)
-        .then(function (returned) {
+        .then(function () {
           vm.reset()
           vm.response = 'You successfully logged in!'
-          console.log(returnedUser);
         })
         .catch(function (result) {
           vm.errors.push(result.data.err)

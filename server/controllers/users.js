@@ -10,17 +10,14 @@ function show (req, res, next) {
 }
 
 function create (req, res, next) {
-  debugger
   const body = req.body
-  console.log(req.body);
   User.create(body).then((user) => {
-    console.log(user);
-    debugger
     res.json({ user }
     )}).catch((err) =>{
       next(err)
     })
 }
+
 
 module.exports = {
   index, show, create

@@ -22,41 +22,13 @@
     <script defer src="./scripts/survey/sellerSurvey.js"></script>
     <script defer src="./scripts/matches/matches.js"></script>
     <script defer src="./scripts/listing/listing.js"></script>
+    <script defer src="./scripts/navbar/navbar.js"></script>
     <script defer src="./scripts/services/sessions.service.js"></script>
     <script defer src="./scripts/services/users.service.js"></script>
     <script defer src="./scripts/app.run.js"></script>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
-   <a class="navbar-brand" href="/">House Finder</a>
-   <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/dashboard">Dashboard <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/buyerSurvey">Buyer Survey</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/sellerSurvey">Seller Survey</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/listing">Listing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/matches">Matches</a>
-      </li>
-    </ul>
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link" href="/login">login</a>
-      </li>
-    </ul>
-    <form class="form-inline">
-    <button class="btn btn-outline-primary" type="button"><a href="/signup"> Sign up</a></button>
-  </form>
-  </div>
- </nav>
+    <navbar></navbar>
    <ui-view></ui-view>
   </body>
 </html>

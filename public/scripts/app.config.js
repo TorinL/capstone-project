@@ -15,13 +15,11 @@
       name: 'dashboard',
       url:'/dashboard',
       component:'dashboard',
-      requiresLogin: true
     })
 
     .state({
       name: 'login',
       url:'/login',
-      params: { notification: null },
       component:'login'
     })
 

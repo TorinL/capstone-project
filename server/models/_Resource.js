@@ -13,7 +13,6 @@ function ResourceFactory (table) {
     }
 
     static create (body) {
-      debugger
       return db('users').insert(body).returning('*')
     }
 

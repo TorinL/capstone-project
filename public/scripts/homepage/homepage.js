@@ -15,7 +15,6 @@
     function $onInit () {
       $http.get(`${baseUrl}/api/homepage`).then((featuredHomes) => {
         vm.featuredHomes = featuredHomes.data
-        console.log(featuredHomes)
       })
     }
   }

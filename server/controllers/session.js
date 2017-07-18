@@ -11,8 +11,7 @@ function create (req, res, next) {
     .then(user => {
       return bcrypt.compare(password, user.password)
         .then(() => {
-          debugger
-          req.session = {userId: user.id}
+          req.session.userId = user.id
 
           res.json({ user: { id: user.id, email: user.email }})
         })
