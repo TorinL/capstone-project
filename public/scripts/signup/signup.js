@@ -39,5 +39,12 @@
         vm.errors.push(result.data.err)
       })
     }
+
+    vm.logout = function () {
+      SessionsService.logout().then(function () {
+        vm.reset()
+        vm.response = 'You successfully logged out.'
+      })
+    }
     }
   })()

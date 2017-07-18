@@ -1,4 +1,4 @@
-const { User } = require('../models')
+const  User  = require('../models/User.js')
 const bcrypt = require('bcrypt-as-promised')
 
 function create (req, res, next) {
@@ -11,12 +11,13 @@ function create (req, res, next) {
     .then(user => {
       return bcrypt.compare(password, user.password)
         .then(() => {
-          req.session.userId = user.id
+          debugger
+          req.session = {userId: user.id}
 
           res.json({ user: { id: user.id, email: user.email }})
         })
     })
-    .catch(() => next({ status: 401, message: 'Could not login user' }))
+    .catch((e) => next({ status: 401, message: e }))
 }
 
 function destroy (req, res, next) {

@@ -32,6 +32,7 @@ a {
   color: white;
 }
 
+
 #main-slogan{
   padding-top: 200px;
   padding-bottom: 50px;
@@ -88,4 +89,17 @@ a {
 
 .log-in{
   padding-top: 100px;
+}
+
+.dashboard-page{
+  padding-top: 100px;
+}
+
+.dashboard-edit-button{
+  margin-left: 130px;
+  margin-top: 20px;
+}
+
+.profile-pic {
+  border: solid;
 }

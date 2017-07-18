@@ -5,11 +5,11 @@ function ResourceFactory (table) {
     constructor () {}
 
     static all () {
-      return db(table)
+      return db('users')
     }
 
     static findById (id) {
-      return db(table).where({ id }).first()
+      return db('users').where({ id }).first()
     }
 
     static create (body) {
@@ -18,11 +18,11 @@ function ResourceFactory (table) {
     }
 
     static update (id, body) {
-      return db(table).update(body).where({ id }).returning('*')
+      return db('users').update(body).where({ id }).returning('*')
     }
 
     static destroy (id) {
-      return db(table).del().where({ id }).returning('*')
+      return db('users').del().where({ id }).returning('*')
     }
   }
 

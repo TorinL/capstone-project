@@ -15,7 +15,7 @@
       name: 'dashboard',
       url:'/dashboard',
       component:'dashboard',
-      // requiresLogin: true
+      requiresLogin: true
     })
 
     .state({

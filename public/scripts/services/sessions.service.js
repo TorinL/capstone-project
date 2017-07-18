@@ -15,6 +15,9 @@
           sessionService.user = result.data.user
           return sessionService.user
         })
+        .catch((err) => {
+          console.error(err);
+        })
     }
 
     sessionService.logout = function () {

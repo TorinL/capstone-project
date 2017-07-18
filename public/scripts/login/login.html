@@ -1,12 +1,12 @@
 <div class ="container">
-  <form>
+  <form ng-submit='$ctrl.login($ctrl.loginOpts)'>
   <div class="form-group log-in">
     <label for="userEmailLogin">Email</label>
-      <input type="email" class="form-control" placeholder="Enter email">
+      <input ng-model="$ctrl.loginOpts.email" type="email" class="form-control" placeholder="Enter email">
   </div>
   <div class="form-group">
     <label for="userPasswordLogin">Password</label>
-      <input type="password" class="form-control" placeholder="Enter Password">
+      <input ng-model="$ctrl.loginOpts.password" type="password" class="form-control" placeholder="Enter Password">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
