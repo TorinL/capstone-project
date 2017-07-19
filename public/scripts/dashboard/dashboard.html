@@ -1,6 +1,6 @@
 <div class ="container dashboard-page">
   <div class ="row">
-    <img class="profile-pic"        src="https://content-static.upwork.com/uploads/2014/10/02123010/profile-photo_friendly.jpg" height="200px">
+    <img class="profile-pic" src="https://content-static.upwork.com/uploads/2014/10/02123010/profile-photo_friendly.jpg" height="200px">
     <div class="dashboard-info">
       <h3>{{$ctrl.user.first_name}} {{$ctrl.user.last_name}}</h3>
       <p>{{$ctrl.user.email}}</p>
@@ -8,7 +8,10 @@
       <p>Status: Buying a home</p>
     </div>
     <div class="dashboard-side-panel">
-      <button type="button" class="btn btn-primary">Buyer Survey</button>
+      <button type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/buyerSurvey">Buyer Survey</a></button>
+      <button type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/sellerSurvey">Seller Survey</a></button>
+      <button type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/listing">My Listing</a></button>
+      <button type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/listing">My Matches</a></button>
     </div>
   </div>
   <div>
@@ -16,6 +19,6 @@
   </div>
   <div class="dashboard-about-me">
     <h3>About {{$ctrl.user.first_name}}</h3>
-    <p>Freegan tilde ramps authentic vaporware. Cliche etsy slow-carb unicorn, truffaut tilde keytar shoreditch butcher portland sartorial artisan humblebrag. Selfies pickled paleo, authentic iceland shaman actually health goth pabst godard. Cronut beard XOXO etsy, lomo master cleanse squid trust fund succulents deep v pickled artisan cliche gentrify pabst. Street art meditation af disrupt butcher paleo, unicorn occupy tumeric pickled actually. Four loko chambray yuccie occupy polaroid, taiyaki PBR&B whatever before they sold out vice. Shoreditch kogi you probably haven't heard of them adaptogen, meditation farm-to-table flexitarian sustainable banh mi readymade austin tbh biodiesel church-key forage. Artisan af four loko kombucha iceland whatever bitters hashtag tofu glossier selvage blog. Tumblr 3 wolf moon pickled, letterpress subway tile knausgaard vaporware kickstarter gochujang. Lumbersexual brooklyn vaporware chartreuse locavore, intelligentsia palo santo knausgaard pour-over synth. Butcher irony literally shaman crucifix portland. Narwhal blue bottle austin meh, biodiesel fanny pack echo park four dollar toast mumblecore yuccie ugh kombucha forage flannel. Messenger bag leggings poke, air plant deep v man bun taiyaki la croix waistcoat tattooed.</p>
+    <p>Freegan tilde ramps authentic vaporware. Cliche etsy slow-carb unicorn, truffaut tilde keytar shoreditch butcher portland sartorial artisan humblebrag. Selfies pickled paleo, authentic iceland shaman actually health goth pabst godard. Cronut beard XOXO etsy, lomo master cleanse squid trust fund succulents deep v pickled artisan cliche gentrify pabst. Street art meditation af disrupt butcher paleo, unicorn occupy tumeric pickled actually. Four loko chambray yuccie occupy polaroid, taiyaki PBRB whatever before they sold out vice. Shoreditch kogi you probably haven't heard of them adaptogen, meditation farm-to-table flexitarian sustainable banh mi readymade austin tbh biodiesel church-key forage. Artisan af four loko kombucha iceland whatever bitters hashtag tofu glossier selvage blog. Tumblr 3 wolf moon pickled, letterpress subway tile knausgaard vaporware kickstarter gochujang. Lumbersexual brooklyn vaporware chartreuse locavore, intelligentsia palo santo knausgaard pour-over synth. Butcher irony literally shaman crucifix portland. Narwhal blue bottle austin meh, biodiesel fanny pack echo park four dollar toast mumblecore yuccie ugh kombucha forage flannel. Messenger bag leggings poke, air plant deep v man bun taiyaki la croix waistcoat tattooed.</p>
   </div>
 </div>

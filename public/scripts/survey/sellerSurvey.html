@@ -1,30 +1,34 @@
 <div class ="container buyer-survey">
       <h2>Please list some details about your home</h2>
   <div class ="row buyer-form-panel">
-   <form class="form-panel">
+   <form ng-submit="$ctrl.sellerSurvey($ctrl.sellerOpts)" class="form-panel">
     <div class="form-group buyers-survey-question">
       <label for="location">Where is your home located?</label>
-       <input class="form-control" type="text">
+       <input ng-model="$ctrl.sellerOpts.location" class="form-control" type="text">
+    </div>
+    <div class="form-group buyers-survey-question">
+      <label for="location">What is your homes address?</label>
+       <input ng-model="$ctrl.sellerOpts.address" class="form-control" type="text">
     </div>
     <div class="form-group buyers-survey-question">
       <label for="squareFeet">How many square feet is your home?</label>
-       <input class="form-control" type="number">
+       <input ng-model="$ctrl.sellerOpts.square_footage" class="form-control" type="number">
     </div>
     <div class="form-group buyers-survey-question">
       <label for="bedrooms">How many bedrooms are in your home?</label>
-       <input class="form-control" type="number">
+       <input ng-model="$ctrl.sellerOpts.bedrooms" class="form-control" type="number">
     </div>
     <div class="form-group buyers-survey-question">
       <label for="bathrooms">How many bathrooms are in your home?</label>
-       <input class="form-control" type="number">
+       <input ng-model="$ctrl.sellerOpts.bathrooms" class="form-control" type="number">
     </div>
     <div class="form-group buyers-survey-question">
       <label for="homeValue">How much are you asking for your home?</label>
-       <input class="form-control" type="number">
+       <input ng-model="$ctrl.sellerOpts.home_value" class="form-control" type="number">
     </div>
     <div class="form-group buyers-survey-question">
   <label for="homeDescription">Please enter a brief description of your home!</label>
-  <textarea class="form-control" rows="4"></textarea>
+  <textarea ng-model="$ctrl.sellerOpts.description" class="form-control" rows="4"></textarea>
 </div>
     <div class="form-group seller-survey-question">
       <label for="homePic">Upload a picture of your home!</label>

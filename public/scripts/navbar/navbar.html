@@ -6,12 +6,6 @@
     <a class="nav-link" href="/dashboard">Dashboard <span class="sr-only">(current)</span></a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/buyerSurvey">Buyer Survey</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/sellerSurvey">Seller Survey</a>
-  </li>
-  <li class="nav-item">
     <a class="nav-link" href="/listing">Listing</a>
   </li>
   <li class="nav-item">
@@ -20,16 +14,14 @@
 </ul>
 <ul class="nav justify-content-end">
   <li class="nav-item">
-    <a  class="nav-link" href="/login">login</a>
-  </li>
-  <li class="nav-item">
-    <a ng-if="vm.Auth.loggedIn" ng-click="vm.logout()">Logout</a>
+    <a class="nav-link" href="/login">login</a>
   </li>
 </ul>
 <form class="form-inline">
 <button class="btn btn-outline-primary" type="button"><a href="/signup"> Sign up</a></button>
 </form>
+<form class="form-inline">
+<button class="btn btn-outline-primary" type="button" ng-click="$ctrl.logout()"> Sign Out</button>
+</form>
 </div>
 </nav>
-
-<!-- <button ng-click="$ctrl.logout()" class="btn btn-block btn-secondary">Logout</button> -->

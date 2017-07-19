@@ -3,40 +3,37 @@
   angular.module('app')
   .component('navbar', {
     controller: controller,
-    templateUrl: './scripts/navbar/navbar.html'
+    templateUrl: './scripts/navbar/navbar.html',
   })
 
-  controller.$inject = ['API_BASE_URL', '$http', '$state']
-  function controller (baseUrl, $http, $state){
+  controller.$inject = ['API_BASE_URL', '$http', '$state', '$stateParams', 'SessionsService', 'UsersService']
+  function controller (baseUrl, $http, $state, $stateParams, SessionsService, UsersService){
     const vm = this
     vm.$onInit = $onInit
-    vm.auth = auth
+
+    vm.reset = function () {
+      vm.response = vm.notification = ''
+      vm.errors = []
+      vm.loginOpts = {}
+      vm.signupOpts = {}
+    }
+
+    vm.reset()
+    vm.notification = $stateParams.notification || ''
+    vm.session = SessionsService
 
 
     function $onInit () {
-      console.log('navbar is tight')
     }
 
-  }
 
-  vm.logout = function() {
-    vm.auth.logout();
+
+  vm.logout = function () {
+    SessionsService.logout().then(function () {
+      vm.reset()
+      vm.response = 'You successfully logged out.'
+      $state.go('base')
+    })
   }
+}
 })()
-
-
-
-// angular.module('app.navbar', []).component('navBar', {
-//   templateUrl: 'components/navbar/navbar.html',
-//   controllerAs: 'vm',
-//   controller: ['Auth', '$rootRouter', function(Auth, $rootRouter) {
-//     var vm = this;
-//
-//     vm.Auth = Auth;
-//
-//     vm.logout = function() {
-//       vm.Auth.logout();
-//       $rootRouter.navigate(['/Home']);
-//     }
-//   }]
-// });
