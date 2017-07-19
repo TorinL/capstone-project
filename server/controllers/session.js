@@ -19,10 +19,22 @@ function create (req, res, next) {
     .catch((e) => next({ status: 401, message: e }))
 }
 
+function refresh (req, res, next) { // new
+  const id = req.session.userId
+
+  if (id) {
+    User.findById(id)
+      .then(user => res.json({ user: { id: user.id, email: user.email }}))
+      .catch(next)
+  } else {
+    res.json(false)
+  }
+}
+
 function destroy (req, res, next) {
   req.session.destroy((err) => err ? next(err) : res.json(true))
 }
 
 module.exports = {
-  create, destroy
+  create, destroy, refresh
 }

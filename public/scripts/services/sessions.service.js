@@ -7,6 +7,14 @@
     var sessionService = this
     sessionService.user = {}
 
+    sessionService.refresh = function () { // new
+      return $http.get(`/api/sessions/refresh`).then(function (result) {
+        var response = result.data
+        console.log('response:', response);
+        response ? sessionService.user = response.user : sessionService.user = {}
+      })
+    }
+
     sessionService.login = function (user) {
       var body = { email: user.email, password: user.password }
 

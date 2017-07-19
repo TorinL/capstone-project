@@ -15,6 +15,7 @@
       name: 'dashboard',
       url:'/dashboard',
       component:'dashboard',
+      requiresLogin: true
     })
 
     .state({
@@ -50,7 +51,7 @@
     .state({
       name: 'listing',
       url:'/listing',
-      component:'listing'
+      component:'singleListing'
     })
   }
 })()

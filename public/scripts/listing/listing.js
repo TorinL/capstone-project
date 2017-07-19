@@ -1,7 +1,7 @@
 (function(){
 
   angular.module('app')
-  .component('listing', {
+  .component('singleListing', {
     controller: controller,
     templateUrl: './scripts/listing/listing.html'
   })
