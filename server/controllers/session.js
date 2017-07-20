@@ -19,7 +19,7 @@ function create (req, res, next) {
     .catch((e) => next({ status: 401, message: e }))
 }
 
-function refresh (req, res, next) { // new
+function refresh (req, res, next) {
   const id = req.session.userId
 
   if (id) {

@@ -48,5 +48,10 @@ exports.seed = function(knex) {
       }
       ,
      ])
-    })
+    }).then(() => {
+    return knex.raw(
+      "SELECT setval('buyer_homes_id_seq', (SELECT MAX(id) FROM buyer_homes));"
+    )
+  })
+
 };

@@ -16,6 +16,10 @@ function ResourceFactory (table) {
       return db('users').insert(body).returning('*')
     }
 
+    static createHome (body) {
+      return db('homes').insert(body).returning('*')
+    }
+
     static update (id, body) {
       return db('users').update(body).where({ id }).returning('*')
     }

@@ -1,7 +1,7 @@
 <div class ="container buyer-survey">
       <h2>Please list some details about your home</h2>
   <div class ="row buyer-form-panel">
-   <form ng-submit="$ctrl.sellerSurvey($ctrl.sellerOpts)" class="form-panel">
+   <form ng-submit="$ctrl.postHome($ctrl.sellerOpts)" class="form-panel">
     <div class="form-group buyers-survey-question">
       <label for="location">Where is your home located?</label>
        <input ng-model="$ctrl.sellerOpts.location" class="form-control" type="text">
@@ -9,6 +9,10 @@
     <div class="form-group buyers-survey-question">
       <label for="location">What is your homes address?</label>
        <input ng-model="$ctrl.sellerOpts.address" class="form-control" type="text">
+    </div>
+    <div class="form-group buyers-survey-question">
+      <label for="location">What is your homes zip code?</label>
+       <input ng-model="$ctrl.sellerOpts.zip_code" class="form-control" type="number">
     </div>
     <div class="form-group buyers-survey-question">
       <label for="squareFeet">How many square feet is your home?</label>

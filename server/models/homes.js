@@ -1,4 +1,6 @@
 const db = require('../../db/index.js')
+const ResourceFactory = require('./_Resource')
+const Resource =  ResourceFactory()
 
 class Homes {
   constructor(){
@@ -7,6 +9,20 @@ class Homes {
     return db('homes')
     .select('*').limit(3)
   }
-}
+
+  static insertHome(body){
+    const { location, address, zip_code, square_footage, bedrooms, bathrooms, home_value, description, img_url } = body
+    console.log(body);
+
+    if (!location || !address || !zip_code || !square_footage || !bedrooms || !bathrooms || !home_value || !description)
+
+      return Promise.reject({status: 422, message: 'One or more fields missing, please complete the survey before submitting.'})
+
+
+    return Resource.createHome({ location, address, zip_code, square_footage, bedrooms, bathrooms, home_value, description, img_url })
+    }
+
+  }
+
 
 module.exports = Homes
