@@ -20,4 +20,13 @@ function newHomes(req, res, next){
  })
 }
 
-module.exports = { getFeaturedHomes, newHomes }
+function getHomes(req, res, next){
+  homes.displayAllHomes().then((allHomes) => {
+    res.json(allHomes)
+  })
+  .catch((err) => {
+    console.error(err);
+  })
+}
+
+module.exports = { getFeaturedHomes, newHomes, getHomes }

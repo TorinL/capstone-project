@@ -10,6 +10,10 @@ class Homes {
     .select('*').limit(3)
   }
 
+  static displayAllHomes() {
+    return db('homes')
+  }
+
   static insertHome(body){
     const { location, address, zip_code, square_footage, bedrooms, bathrooms, home_value, description, img_url } = body
     console.log(body);

@@ -13,7 +13,10 @@
 
 
     function $onInit () {
-      console.log('inside my matches component')
+      $http.get(`${baseUrl}/api/homes`).then((allHomes) => {
+        console.log(allHomes);
+        vm.allHomes = allHomes.data
+      })
     }
 
   }
