@@ -34,6 +34,7 @@
       .then(function () {
         vm.reset()
         vm.response = 'You successfully created an account and are logged in!'
+        $state.go('dashboard')
       })
       .catch(function (result) {
         vm.errors.push(result.data.err)

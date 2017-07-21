@@ -13,15 +13,16 @@
   </li>
 </ul>
 <ul class="nav justify-content-end">
-  <li ng-if="$ctrl.userId !== undefined"  class="nav-item">
+  <li ng-if="!$ctrl.user.id"  class="nav-item">
     <a class="nav-link" href="/login">login</a>
   </li>
 </ul>
 <form class="form-inline">
-<button ng-if="$ctrl.userId !== undefined" class="btn btn-outline-primary" type="button"><a href="/signup"> Sign up</a></button>
+
+<button ng-if="!$ctrl.user.id" class="btn btn-outline-primary" type="button"><a href="/signup"> Sign up</a></button>
 </form>
 <form class="form-inline">
-<button ng-if="$ctrl.userId !== undefined" class="btn btn-outline-primary" type="button" ng-click="$ctrl.logout()"> Sign Out</button>
+<button ng-if="$ctrl.user.id" class="btn btn-outline-primary" type="button" ng-click="$ctrl.logout()"> Sign Out</button>
 </form>
 </div>
 </nav>

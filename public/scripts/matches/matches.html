@@ -27,26 +27,26 @@
    </div>
 
   </div>
-  <div ng-repeat="home in $ctrl.allHomes" class="row home-matches">
+  <div class="row home-matches">
     <h1 class="matchespage-title">These homes fulfil your needs!</h1>
-    <div class="row matches-homes-list">
+    <div class="row matches-homes-list" ng-repeat="home in $ctrl.allHomes">
       <div class="listing-image">
-     <img class="matches-page-listings-img" src='https://www.homepower.com/sites/default/files/styles/featured_hero/public/articles/images/HP177-36a-Magwood.jpg?itok=NsPsovL1'>
+     <img class="matches-page-listings-img" src='{{home.img_url}}' height="500px" width="500px">
     </div>
     <div class="action-info-container-matches-page">
       <div class="action-info-price">
         <span>{{home.home_value}}</span>
       </div>
       <div class="action-info-address">
-        <span>3614 NW 96th St.</span>
+        <span>{{home.address}}{{home.zip_code}}</span>
       </div>
       <div class="action-info-location">
-        <span>Seattle, WA, 98107</span>
+        <span>{{home.location}}</span>
       </div>
       <div class="action-info-details">
-        <span>3 bed -</span>
-        <span>3 bath -</span>
-        <span>2100 sqft</span>
+        <span>{{home.bedrooms}} bed -</span>
+        <span>{{home.bathrooms}} bath -</span>
+        <span>{{home.sqaure_footage}} sqft</span>
       </div>
       <div class="action-info-button">
         <span><button type="button" class="btn btn-primary">View Seller Profile</button></span>

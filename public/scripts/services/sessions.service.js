@@ -10,17 +10,17 @@
 
     sessionService.user = {}
 
-    sessionService.refresh = function () { // new
+    sessionService.refresh = function () {
+      console.log('?');
       return $http.get(`/api/sessions/refresh`).then(function (result) {
         var response = result.data
-        // console.log('response:', response);
-        response ? sessionService.user = response.user : sessionService.user = {}
+        response ? Object.assign(sessionService.user, response.user) : Object.assign(sessionService.user, {})
       })
     }
 
     function getUserId() {
       let userId = window.localStorage.getItem("housefinder-userId");
-      console.log(userId);
+      console.log(typeof userId);
 
       return userId;
     }
@@ -30,7 +30,7 @@
       return $http.post('/api/sessions', body)
         .then(function (result) {
           console.log('login stuff',result.data.user);
-          sessionService.user = result.data.user
+          Object.assign(sessionService.user, result.data.user)
           window.localStorage.setItem("housefinder-userId",result.data.user.id);
           return sessionService.user
         })
@@ -40,7 +40,10 @@
     }
 
     sessionService.logout = function () {
-      sessionService.user = {}
+      for (var key in sessionService.user) {
+        delete sessionService.user[key]
+      }
+      
       window.localStorage.setItem("housefinder-userId", undefined)
       return $http.delete('/api/sessions')
     }

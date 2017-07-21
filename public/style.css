@@ -129,3 +129,11 @@ a {
 .listing-image{
   text-align: center;
 }
+
+.action-info-container {
+  border: solid;
+}
+
+.action-listing-description {
+  padding-top: 25px;
+}
