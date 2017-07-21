@@ -58,18 +58,17 @@ a {
   text-align: center;
 }
 
+
 #featured-homes-title{
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
 }
 
-
-.featured-homes {
-  width: 300px;
-  height: 3000px;
+.homepage-home-img{
+  max-width: 350px;
+  max-height: 350px;
 }
-
 .company-info{
   background-color:#7d8799;
 }
@@ -136,4 +135,13 @@ a {
 
 .action-listing-description {
   padding-top: 25px;
+}
+
+.matches-page-container {
+  padding-top: 100px;
+}
+
+.matches-page-listings-img {
+  max-height: 300px;
+  max-width: 300px;
 }

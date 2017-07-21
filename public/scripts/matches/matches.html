@@ -1,37 +1,24 @@
 <div class ="container matches-page-container">
   <div class ="user-matches">
-   <h1 class="matchespage-title"> These users are interested in buying your home!</h1>
-   <div class ="row matches-buyers-information">
-     <img class="profile-pic" src="https://www.webpagefx.com/data/marketing-persona-generator/img/placeholder.png" height="200px">
+   <h1 class="matchespage-title">These users are interested in buying your home!</h1>
+   <div class ="row matches-buyers-information" ng-repeat="user in $ctrl.users">
+     <img class="profile-pic" ng-src="{{user.profile_url}}" height="200px">
+
      <div class="dashboard-info">
-       <h3>Torin Longaker</h3>
-       <p>torin@gmail.com</p>
-       <p>(206) 222-2222</p>
-       <p>Status: Buying a home</p>
+       <h3>{{user.first_name}} {{user.last_name}}</h3>
+       <p>{{user.email}}</p>
+       <p>{{user.phone_number}}</p>
      </div>
      <div class="dashboard-side-panel">
        <button type="button" class="btn btn-primary">View profile</button>
      </div>
    </div>
-   <div class ="row matches-buyers-information">
-     <img class="profile-pic" src="https://www.webpagefx.com/data/marketing-persona-generator/img/placeholder.png" height="200px">
-     <div class="dashboard-info">
-       <h3>Torin Longaker</h3>
-       <p>torin@gmail.com</p>
-       <p>(206) 222-2222</p>
-       <p>Status: Buying a home </p>
-     </div>
-     <div class="dashboard-side-panel">
-       <button type="button" class="btn btn-primary">View Profile</button>
-     </div>
-   </div>
-
   </div>
-  <div class="row home-matches">
+  <div class="home-matches">
     <h1 class="matchespage-title">These homes fulfil your needs!</h1>
-    <div class="row matches-homes-list" ng-repeat="home in $ctrl.allHomes">
+    <div class="matches-homes-list" ng-repeat="home in $ctrl.allHomes">
       <div class="listing-image">
-     <img class="matches-page-listings-img" src='{{home.img_url}}' height="500px" width="500px">
+     <img class="matches-page-listings-img" src='{{home.img_url}}'>
     </div>
     <div class="action-info-container-matches-page">
       <div class="action-info-price">

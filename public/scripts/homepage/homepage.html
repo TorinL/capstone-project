@@ -1,6 +1,6 @@
 <div class ="container-fluid home-container">
   <div class ="main-parent-div homepage-img">
-   <h1 id="main-slogan">Matching home owners to buyers</h1>
+   <h1 id="main-slogan">Matching home owners to home buyers</h1>
    <div id="action-item">
    <button type="button" class="btn btn-primary"><a id="action-item-button" href="/signup">Get Started</a></button>
  </div>
@@ -12,7 +12,7 @@
   <div class="ang-parent-div" ng-repeat="homes in $ctrl.featuredHomes">
     <a href="/listing">
     <div class="featured-homes-image-card">
-    <img ng-src="{{homes.img_url}}" height="250px" width="250px">
+    <img class="homepage-home-img" ng-src="{{homes.img_url}}">
   </a>
     </div>
   <div class="featured-homes-info-card">

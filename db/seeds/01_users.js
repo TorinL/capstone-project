@@ -10,7 +10,7 @@ exports.seed = function(knex) {
         last_name: 'Smith',
         email: 'mikesmith4455@gmail.com',
         phone_number: '2063445677',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
       },
       {
@@ -20,7 +20,7 @@ exports.seed = function(knex) {
         last_name: 'Logan',
         email:'nottheadele@gmail.com',
         phone_number:'6149943434',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
 
       },
