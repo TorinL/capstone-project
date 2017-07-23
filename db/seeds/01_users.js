@@ -31,7 +31,7 @@ exports.seed = function(knex) {
         last_name: 'Ewing',
         email: 'sarahewing@msn.com',
         phone_number: '2065546777',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
       },
       {
@@ -41,7 +41,7 @@ exports.seed = function(knex) {
         last_name: 'Higgins',
         email: 'mphiggins04@gmail.com',
         phone_number: '2069456655',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
       },
       {
@@ -51,7 +51,7 @@ exports.seed = function(knex) {
         last_name: 'Myers',
         email: 'francismeyers@yahoo.com',
         phone_number: '2067722294',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
 
       },
@@ -62,7 +62,7 @@ exports.seed = function(knex) {
         last_name: 'Johnson',
         email: 'tylerryanjohnson@msn.com',
         phone_number: '2065231209',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
       },
       {
@@ -72,7 +72,7 @@ exports.seed = function(knex) {
         last_name: 'Jones',
         email: 'jamesjones123321@gmail.com',
         phone_number: '4256573956',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
       },
       {
@@ -82,7 +82,7 @@ exports.seed = function(knex) {
         last_name: 'O\'Neal',
         email: 'tayoneal1@gmail.com',
         phone_number: '(206 222-3333)',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
       },
       {
@@ -92,7 +92,7 @@ exports.seed = function(knex) {
         last_name: 'Alexander',
         email: 'yanialexander@msn.com',
         phone_number: '2064557878',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
       },
       {
@@ -102,7 +102,7 @@ exports.seed = function(knex) {
         last_name: 'Lictenstein',
         email: 'Hanslictenstein@gmail.com',
         phone_number: '2061188453',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
       },
       {
@@ -112,7 +112,7 @@ exports.seed = function(knex) {
         last_name: 'Rodriguez',
         email: 'hectorprod@gmail.com',
         phone_number: '2068329949',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
       },
       {
@@ -122,7 +122,7 @@ exports.seed = function(knex) {
         last_name: 'Brown',
         email: 'jasminebrown@gmail.com',
         phone_number: '2067745442',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
       },
       {
@@ -132,7 +132,7 @@ exports.seed = function(knex) {
         last_name: 'Hill',
         email: 'tyreekhill4@gmail.com',
         phone_number: '4253476492',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'erfve',
       },
       {
@@ -142,7 +142,7 @@ exports.seed = function(knex) {
         last_name: 'Miles',
         email: 'ryanmiles55@gmail.com',
         phone_number: '(206) 555-6666',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
       },
       {
@@ -152,7 +152,7 @@ exports.seed = function(knex) {
         last_name: 'King',
         email: 'emmatking23@gmail.com',
         phone_number: '2067542143',
-        profile_url: 'https://pixabay.com/p-973461/?no_redirect',
+        profile_url: 'http://www.topcareer.jp/inter_blog/wp-content/uploads/100_100_empty.gif',
         password: 'test',
       }
     ])

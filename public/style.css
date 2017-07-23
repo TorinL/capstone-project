@@ -12,6 +12,12 @@ a {
   color: white;
 }
 
+.login-form-page {
+  margin: 0 auto;
+  width: 250px;
+  padding-bottom: 60px;
+}
+
 .container-fluid {
   padding: 0px;
 }

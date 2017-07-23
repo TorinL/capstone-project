@@ -1,25 +1,24 @@
 <div class ="container matches-page-container">
   <div class ="user-matches">
    <h1 class="matchespage-title">These users are interested in buying your home!</h1>
-   <div class ="row matches-buyers-information" ng-repeat="user in $ctrl.users">
+   <div class= "row">
+   <div class ="col-md-4 matches-buyers-information" ng-repeat="user in $ctrl.users">
      <img class="profile-pic" ng-src="{{user.profile_url}}" height="200px">
-
      <div class="dashboard-info">
        <h3>{{user.first_name}} {{user.last_name}}</h3>
        <p>{{user.email}}</p>
        <p>{{user.phone_number}}</p>
+         <button type="button" class="btn btn-primary">View profile</button>
      </div>
-     <div class="dashboard-side-panel">
-       <button type="button" class="btn btn-primary">View profile</button>
-     </div>
+    </div>
    </div>
   </div>
   <div class="home-matches">
     <h1 class="matchespage-title">These homes fulfil your needs!</h1>
-    <div class="matches-homes-list" ng-repeat="home in $ctrl.allHomes">
-      <div class="listing-image">
+    <div class="row">
+    <div class=" col-md-4 matches-homes-list" ng-repeat="home in $ctrl.allHomes">
      <img class="matches-page-listings-img" src='{{home.img_url}}'>
-    </div>
+
     <div class="action-info-container-matches-page">
       <div class="action-info-price">
         <span>{{home.home_value}}</span>

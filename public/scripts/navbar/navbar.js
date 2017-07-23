@@ -20,7 +20,6 @@
 
     vm.reset()
     vm.notification = $stateParams.notification || ''
-    // userId = SessionsService.getUserId();
 
 
     function $onInit () {
