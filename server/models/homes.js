@@ -14,6 +14,10 @@ class Homes {
     return db('homes')
   }
 
+  static displayMatchedHomes(id) {
+    return db('buyer_survey')
+  }
+
   static findHomeById (id) {
     return db('homes').where({ id }).first()
   }

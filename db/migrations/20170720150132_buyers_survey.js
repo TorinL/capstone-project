@@ -8,6 +8,7 @@ exports.up = function(knex) {
     table.string('home_value').notNullable();
     table.string('bedrooms').notNullable();
     table.string('bathrooms');
+    table.integer('user_id');
     table.timestamps(true, true);
   })
 };

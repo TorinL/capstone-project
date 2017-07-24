@@ -4,7 +4,7 @@ exports.up = function(knex) {
   return knex.schema.createTable('buyer_homes', (table) => {
     table.increments();
     table.integer('home_id').references('id').inTable('homes');
-    table.integer('buyer_id').references('id').inTable('users');
+    table.integer('seller_id').references('id').inTable('users');
     table.timestamps(true, true);
   })
 };

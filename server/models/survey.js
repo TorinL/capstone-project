@@ -7,7 +7,7 @@ class Survey {
   }
 
   static newBuyerSurvey(body){
-    const { location, square_footage, home_value, bedrooms, bathrooms } = body
+    const { location, square_footage, home_value, bedrooms, bathrooms, user_id } = body
     console.log(body);
 
     if (!location || !square_footage || !home_value || !bedrooms || !bathrooms)
@@ -15,7 +15,7 @@ class Survey {
       return Promise.reject({status: 422, message: 'One or more fields missing, please complete the survey before submitting.'})
 
 
-    return Resource.createBuyerSurvey({ location, square_footage, home_value, bedrooms, bathrooms })
+    return Resource.createBuyerSurvey({ location, square_footage, home_value, bedrooms, bathrooms, user_id })
   }
 }
 

@@ -1,4 +1,6 @@
 const homes = require('../models/homes.js')
+const db = require('../../db/index.js')
+
 
 function getFeaturedHomes(req, res){
   homes.getHomes().then((featuredHomes) => {
@@ -28,10 +30,24 @@ function getHomes(req, res, next){
   })
 }
 
+function getMatchedHomes(req, res, next) {
+  console.log(req.session.userId);
+  db('buyers_survey').where('user_id', req.session.userId).first()
+  .then(survey => {
+    return db('homes')
+    .where('location', )
+  }).then((homes) => {
+    homes.
+  })
+  .catch(err => {
+    console.error(err);
+  })
+}
+
 function showHome (req, res, next) {
   const id = req.params.id
   homes.findHomeById(id).then(user => res.json({ home })).catch(next)
 }
 
 
-module.exports = { getFeaturedHomes, newHomes, getHomes, showHome }
+module.exports = { getFeaturedHomes, newHomes, getHomes, showHome, getMatchedHomes }

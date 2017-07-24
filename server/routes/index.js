@@ -20,5 +20,6 @@ router.get('/sessions/refresh', session.refresh)
 router.get('/users/:id', isLoggedIn, isAuthorized, users.show)
 router.get('/homes/:id', homes.showHome)
 router.put('/users/:id', isLoggedIn, isAuthorized, users.updateUser)
+router.get('/buyers_survey', homes.getMatchedHomes)
 
 module.exports = router;
