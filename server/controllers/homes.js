@@ -12,7 +12,6 @@ function newHomes(req, res, next){
   let body = req.body
   console.log(req.body);
  homes.insertHome(body).then((home) => {
-   console.log('checking new home entry');
    res.json(home)
  })
  .catch((err) => {
@@ -29,4 +28,10 @@ function getHomes(req, res, next){
   })
 }
 
-module.exports = { getFeaturedHomes, newHomes, getHomes }
+function showHome (req, res, next) {
+  const id = req.params.id
+  homes.findHomeById(id).then(user => res.json({ home })).catch(next)
+}
+
+
+module.exports = { getFeaturedHomes, newHomes, getHomes, showHome }

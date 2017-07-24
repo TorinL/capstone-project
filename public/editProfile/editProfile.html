@@ -1,0 +1,40 @@
+<div class = "container editPage">
+<form ng-submit="$ctrl.edit($ctrl.editOpts)">
+  <div class="form-group sign-up">
+    <label for="userFirstName">First Name</label>
+    <input class="form-control" type="text" ng-model="$ctrl.editOpts.first_name">
+  </div>
+  <div class="form-group sign-up">
+    <label for="userFirstName">Last Name</label>
+    <input ng-model="$ctrl.editOpts.last_name" class="form-control" type="text">
+  </div>
+  <div class="form-group sign-up">
+    <label for="userEmail">Email address</label>
+      <input ng-model="$ctrl.editOpts.email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group sign-up">
+    <label for="userPassword">Password</label>
+      <input ng-model="$ctrl.editOpts.password" type="password" class="form-control" placeholder="Password">
+  </div>
+  <div class="form-group sign-up">
+    <label for="userPhone">Phone Number</label>
+      <input ng-model="$ctrl.editOpts.phone_number" class="form-control" type="tel" placeholder="(123) 456-1111">
+  </div>
+  <fieldset class="form-group sign-up">
+    <legend>Are you a Seller or a Buyer?</legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input ng-model="$ctrl.editOpts.seller" type="radio" class="form-check-input" name="optionsRadios" value= true>
+          I am selling my home
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input ng-model="$ctrl.editOpts.seller" type="radio" class="form-check-input" name="optionsRadios" value= false>
+          I am buying a home
+        </label>
+      </div>
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>

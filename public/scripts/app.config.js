@@ -19,6 +19,13 @@
     })
 
     .state({
+      name: 'editProfile',
+      url:'/edit',
+      component:'editProfile',
+      requiresLogin: true
+    })
+
+    .state({
       name: 'login',
       url:'/login',
       component:'login'

@@ -14,6 +14,10 @@ class Homes {
     return db('homes')
   }
 
+  static findHomeById (id) {
+    return db('homes').where({ id }).first()
+  }
+
   static insertHome(body){
     const { location, address, zip_code, square_footage, bedrooms, bathrooms, home_value, description, img_url } = body
     console.log(body);

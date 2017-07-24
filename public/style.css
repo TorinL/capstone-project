@@ -8,6 +8,15 @@ a {
   color: #00B7FF;
 }
 
+.footer-info {
+  float: right;
+  padding-right: 25px;
+}
+
+.footer-comp {
+  max-height: 100px;
+}
+
 .buyer-survey-anch{
   color: white;
 }
@@ -133,17 +142,20 @@ a {
 
 .listing-image{
   text-align: center;
+  padding-right: 25px;
 }
 
 .action-info-container {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   width: 30%;
+  height: 250px;
+  padding-top: 3%;
 }
+
 
 .break-padding {
   padding-left: 20px;
   padding-right: 20px;
-
 }
 
 .action-info {

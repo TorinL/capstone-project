@@ -18,5 +18,7 @@ router.get('/users', users.index)
 router.delete('/sessions', session.destroy)
 router.get('/sessions/refresh', session.refresh)
 router.get('/users/:id', isLoggedIn, isAuthorized, users.show)
+router.get('/homes/:id', homes.showHome)
+router.put('/users/:id', isLoggedIn, isAuthorized, users.updateUser)
 
 module.exports = router;

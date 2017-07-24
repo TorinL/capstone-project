@@ -9,6 +9,11 @@ function show (req, res, next) {
   User.findById(id).then(user => res.json({ user })).catch(next)
 }
 
+function updateUser (req, res, next) {
+  const id = req.params.id
+  User.update(user).then(user => res.json({ user })).catch(next)
+}
+
 function create (req, res, next) {
   const body = req.body
   User.create(body).then((user) => {
@@ -18,7 +23,6 @@ function create (req, res, next) {
     })
 }
 
-
 module.exports = {
-  index, show, create
+  index, show, create, updateUser
  }

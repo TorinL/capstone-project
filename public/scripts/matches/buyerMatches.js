@@ -26,5 +26,9 @@
       console.error('No user logged in');
       $state.go('/login', { notification: 'You do not have access to that page.' })
     })
+
+    this.showHome = function (id) {
+      return $http.get(`/api/homes/${id}`)
+    }
   }
 })()
