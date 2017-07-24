@@ -136,7 +136,18 @@ a {
 }
 
 .action-info-container {
-  border: solid;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  width: 30%;
+}
+
+.break-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.action-info {
+  padding-left: 20px;
 }
 
 .action-listing-description {
@@ -147,7 +158,23 @@ a {
   padding-top: 100px;
 }
 
+.matchespage-title {
+  padding-bottom: 50px;
+}
+
 .matches-page-listings-img {
   max-height: 300px;
   max-width: 300px;
+}
+
+.user-matches {
+  text-align: center;
+}
+
+.matches-users-info{
+  padding-bottom: 50px;
+}
+
+.action-info-container-matches-page {
+  padding-bottom: 50px;
 }

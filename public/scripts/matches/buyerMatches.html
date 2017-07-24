@@ -1,18 +1,4 @@
-<div class ="container matches-page-container">
-  <div class ="user-matches">
-   <h1 class="matchespage-title">These users are interested in buying your home!</h1>
-   <div class= "row">
-   <div class ="col-md-4 matches-buyers-information" ng-repeat="user in $ctrl.users">
-     <img class="profile-pic" ng-src="{{user.profile_url}}" height="200px">
-     <div class="dashboard-info">
-       <h3>{{user.first_name}} {{user.last_name}}</h3>
-       <p>{{user.email}}</p>
-       <p>{{user.phone_number}}</p>
-         <button type="button" class="btn btn-primary">View profile</button>
-     </div>
-    </div>
-   </div>
-  </div>
+<div class="container matches-page-container">
   <div class="home-matches">
     <h1 class="matchespage-title">These homes fulfil your needs!</h1>
     <div class="row">
@@ -32,7 +18,10 @@
       <div class="action-info-details">
         <span>{{home.bedrooms}} bed -</span>
         <span>{{home.bathrooms}} bath -</span>
-        <span>{{home.sqaure_footage}} sqft</span>
+        <span>{{home.square_footage}} sqft</span>
+      </div>
+      <div class="owner-ref">
+        <span>{{home.owner_id}}</span>
       </div>
       <div class="action-info-button">
         <span><button type="button" class="btn btn-primary">View Seller Profile</button></span>
@@ -40,4 +29,5 @@
     </div>
   </div>
  </div>
+</div>
 </div>

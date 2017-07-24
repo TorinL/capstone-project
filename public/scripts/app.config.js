@@ -43,9 +43,15 @@
     })
 
     .state({
-      name: 'matches',
-      url:'/matches',
-      component:'matches'
+      name: 'buyerMatches',
+      url:'/buyerMatches',
+      component:'buyerMatches'
+    })
+
+    .state({
+      name: 'ownerMatches',
+      url:'/ownerMatches',
+      component:'ownerMatches'
     })
 
     .state({

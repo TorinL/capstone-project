@@ -12,7 +12,8 @@
       <button ng-if="$ctrl.user.seller == false" type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/buyerSurvey">Buyer Survey</a></button>
       <button ng-if="$ctrl.user.seller == true" type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/sellerSurvey">Seller Survey</a></button>
       <button ng-if="$ctrl.user.seller == true" type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/listing">My Listing</a></button>
-      <button type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/matches">My Matches</a></button>
+      <button ng-if="$ctrl.user.seller == true" type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/ownerMatches">My Matches</a></button>
+      <button ng-if="$ctrl.user.seller == false" type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/buyerMatches">My Matches</a></button>
     </div>
   </div>
   <div>

@@ -1,9 +1,9 @@
 (function(){
 
   angular.module('app')
-  .component('matches', {
+  .component('buyerMatches', {
     controller: controller,
-    templateUrl: './scripts/matches/matches.html'
+    templateUrl: './scripts/matches/buyerMatches.html'
   })
 
   controller.$inject = ['API_BASE_URL', '$http', '$state', 'SessionsService', 'UsersService']
@@ -14,21 +14,12 @@
 
     function $onInit () {
       $http.get(`${baseUrl}/api/homes`).then((allHomes) => {
-        console.log('these are homes', allHomes);
         vm.allHomes = allHomes.data
       })
-
-      $http.get(`${baseUrl}/api/users`).then((users) => {
-        console.log('these are users', users);
-        vm.users = users.data.users
-      })
-
-
     }
 
     UsersService.show(SessionsService.user.id)
     .then(function (result) {
-      console.log(' im a cool dude and im derek' , result.data);
       vm.user = result.data.user
     })
     .catch(function (result) {

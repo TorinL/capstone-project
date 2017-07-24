@@ -1,0 +1,16 @@
+<div class="container matches-page-container">
+  <div class="user-matches">
+   <h1 class="matchespage-title">These users are interested in buying your home!</h1>
+   <div class= "row">
+   <div class ="col-md-4 matches-buyers-information" ng-repeat="user in $ctrl.users">
+     <img class="profile-pic" ng-src="{{user.profile_url}}" height="200px">
+     <div class="matches-users-info">
+       <h3>{{user.first_name}} {{user.last_name}}</h3>
+       <p>{{user.email}}</p>
+       <p>{{user.phone_number}}</p>
+         <button type="button" class="btn btn-primary">View profile</button>
+     </div>
+    </div>
+   </div>
+  </div>
+</div>

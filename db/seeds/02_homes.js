@@ -74,7 +74,7 @@ exports.seed = function(knex) {
         location: 'Ballard',
         address: '1727 NW 63rd St',
         zip_code: '98107',
-        img_url: '',
+        img_url: 'https://u.realgeeks.media/liveseattlehomes/ballard-seattle-real-estate-mls-listings-homes-condos.jpg',
         square_footage: 1960,
         bedrooms: 3,
         bathrooms: 3,
