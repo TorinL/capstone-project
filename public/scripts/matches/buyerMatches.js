@@ -13,7 +13,7 @@
 
 
     function $onInit () {
-      $http.get(`${baseUrl}/api/homes`).then((allHomes) => {
+      $http.get(`${baseUrl}/api/buyers_survey`).then((allHomes) => {
         vm.allHomes = allHomes.data
       })
     }

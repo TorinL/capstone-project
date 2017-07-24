@@ -11,21 +11,11 @@
     </div>
     <div class="form-group buyers-survey-question">
       <label for="size">How many square feet are you looking for?</label>
-       <select ng-model="$ctrl.buyerOpts.square_footage" class="form-control" id="size">
-        <option> Under 1000 square feet</option>
-        <option>1000-1500 square feet</option>
-        <option>1501-2000 square feet</option>
-        <option> Over 2000 square feet</option>
-      </select>
+       <input ng-model="$ctrl.buyerOpts.square_footage" class="form-control" id="size">
     </div>
     <div class="form-group buyers-survey-question">
-      <label for="size">What price range are you interested in?</label>
-       <select ng-model="$ctrl.buyerOpts.home_value" class="form-control" id="size">
-        <option> Under 500K</option>
-        <option>501K-750K</option>
-        <option>751k-1M</option>
-        <option> Over 1M </option>
-      </select>
+      <label for="size">What is your budget?</label>
+       <input ng-model="$ctrl.buyerOpts.home_value" class="form-control" id="size">
     </div>
     <div class="form-group buyers-survey-question">
       <label for="size">How many bedrooms?</label>
@@ -33,7 +23,7 @@
         <option>1</option>
         <option>2</option>
         <option>3</option>
-        <option>4 or more</option>
+        <option>4</option>
       </select>
     </div>
     <div class="form-group buyers-survey-question">
@@ -42,7 +32,7 @@
         <option>1</option>
         <option>2</option>
         <option>3</option>
-        <option>4 or more</option>
+        <option>4</option>
       </select>
     </div>
 

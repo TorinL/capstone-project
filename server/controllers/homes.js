@@ -35,9 +35,13 @@ function getMatchedHomes(req, res, next) {
   db('buyers_survey').where('user_id', req.session.userId).first()
   .then(survey => {
     return db('homes')
-    .where('location', )
+    .where('location', survey.location )
+    .andWhere('home_value', '<=', survey.home_value)
+    .andWhere('square_footage', '<=', survey.square_footage)
+    .andWhere('bedrooms', '<=', survey.bedrooms)
+    .andWhere('bathrooms', '<=', survey.bathrooms)
   }).then((homes) => {
-    homes.
+    res.send(homes);
   })
   .catch(err => {
     console.error(err);
