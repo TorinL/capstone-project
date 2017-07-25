@@ -11,7 +11,11 @@
     }
 
     this.show = function (id) {
-      return $http.get(`/api/homes/${id}`)
+      console.log(id);
+      return $http.get(`/api/homes/${id}`).then(home => {
+        console.log(home);
+        return home.data
+      })
     }
   }
 }());

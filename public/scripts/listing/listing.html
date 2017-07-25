@@ -1,25 +1,33 @@
 <div class="container listing-page">
   <div class="row">
     <div class="listing-image">
-   <img src='https://photos.zillowstatic.com/p_e/IS2bxb0478l9h81000000000.jpg'>
+   <img src='{{$ctrl.home.img_url}}'>
   </div>
   <div class="action-info-container">
     <div class="action-info">
-      <span>$1025000</span>
+      <span>${{$ctrl.home.home_value}}</span>
     </div>
     <div class="action-info">
-      <span>3612 NW 60th St.</span>
+      <span>{{$ctrl.home.address}}</span>
     </div>
     <div class="action-info">
-      <span>Seattle, WA, 98107</span>
+      <span>{{home.location}} {{home.zip_code}}</span>
     </div>
     <div class="break-padding">
     <hr>
     </div>
     <div class="action-info">
-      <span>3 bed</span>
-      <span>2 bath</span>
-      <span>1870 sqft</span>
+      <span>{{$ctrl.home.bedrooms}} bed</span>
+      <span>{{$ctrl.home.bathrooms}} bath</span>
+      <span>{{$ctrl.home.square_footage}} sqft</span>
+    </div>
+    <div class="break-padding">
+    <hr>
+    </div>
+    <div class="action-info">
+      <span>John Doe</span>
+      <span>(206) 445-9821</span>
+      <p>johndoe@gmail.com</p>
     </div>
   </div>
 </div>

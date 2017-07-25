@@ -19,6 +19,12 @@
     })
 
     .state({
+      name: 'sellerProfile',
+      url:'/sellerProfile',
+      component:'sellerProfile',
+    })
+
+    .state({
       name: 'edit',
       url:'/edit',
       component:'edit'
@@ -62,7 +68,7 @@
 
     .state({
       name: 'listing',
-      url:'/listing',
+      url:'/listing/:id',
       component:'singleListing'
     })
   }

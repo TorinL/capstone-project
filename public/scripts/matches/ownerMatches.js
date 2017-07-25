@@ -16,8 +16,6 @@
       $http.get(`${baseUrl}/api/users`).then((users) => {
         vm.users = users.data.users
       })
-
-
     }
 
     UsersService.show(SessionsService.user.id)

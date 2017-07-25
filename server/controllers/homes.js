@@ -50,7 +50,7 @@ function getMatchedHomes(req, res, next) {
 
 function showHome (req, res, next) {
   const id = req.params.id
-  homes.findHomeById(id).then(user => res.json({ home })).catch(next)
+  homes.findHomeById(id).then(home => res.json({ home })).catch(next)
 }
 
 
