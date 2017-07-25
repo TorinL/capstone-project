@@ -7,7 +7,7 @@
       <p>{{$ctrl.user.phone_number}}</p>
       <p ng-if="$ctrl.user.seller == false">Buying a house</p>
       <p ng-if="$ctrl.user.seller == true">Selling my home</p>
-    </div>
+
     <div class="dashboard-side-panel">
       <button ng-if="$ctrl.user.seller == false" type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/buyerSurvey">Buyer Survey</a></button>
       <button ng-if="$ctrl.user.seller == true" type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/sellerSurvey">Seller Survey</a></button>
@@ -15,6 +15,7 @@
       <button ng-if="$ctrl.user.seller == true" type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/ownerMatches">My Matches</a></button>
       <button ng-if="$ctrl.user.seller == false" type="button" class="btn btn-primary"><a class="buyer-survey-anch" href="/buyerMatches">My Matches</a></button>
     </div>
+  </div>
   </div>
   <div>
     <button type="button" class="btn btn-link dashboard-edit-button" href="/edit">Edit Profile</button>

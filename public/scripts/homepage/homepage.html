@@ -10,7 +10,7 @@
     <h2>Featured Homes</h2>
   </div>
   <div class="ang-parent-div" ng-repeat="homes in $ctrl.featuredHomes">
-    <a href="/listing">
+    <a href="/listing/{{homes.id}}">
     <div class="featured-homes-image-card">
     <img class="homepage-home-img" ng-src="{{homes.img_url}}">
   </a>
