@@ -71,11 +71,5 @@
       url:'/listing/:id',
       component:'singleListing'
     })
-
-    .state({
-      name: 'footer',
-      url: 'footer',
-      component: 'footer'
-    })
   }
 })()

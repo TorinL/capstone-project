@@ -1,11 +1,17 @@
 
-body {
+html, body {
   font-family: 'Open Sans', sans-serif;
-
+  height: 100%;
 }
 
 a {
   color: #00AEEF;
+}
+
+.mystickyfooter{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .btn-primary {
@@ -55,7 +61,7 @@ a {
 }
 
 .navbar{
-  color: white;
+  background-color: white;
 }
 
 
