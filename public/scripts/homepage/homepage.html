@@ -1,8 +1,10 @@
 <div class ="container-fluid home-container">
   <div class ="main-parent-div homepage-img">
-   <h1 id="main-slogan">Matching home owners to home buyers</h1>
+   <h1 id="main-slogan">Matching home sellers to home buyers</h1>
    <div id="action-item">
-   <button type="button" class="btn btn-primary"><a id="action-item-button" href="/signup">Get Started</a></button>
+     <a href="/signup">
+   <button type="button" class="btn btn-primary btn-lg">Join HomeMatcher</button>
+     </a>
  </div>
   </div>
   <div class="list-of-featured-homes secondary-info">
@@ -11,9 +13,9 @@
   </div>
   <div class="ang-parent-div" ng-repeat="homes in $ctrl.featuredHomes">
     <a href="/listing/{{homes.id}}">
-    <div class="featured-homes-image-card">
-    <img class="homepage-home-img" ng-src="{{homes.img_url}}">
-  </a>
+      <div class="featured-homes-image-card">
+      <img class="homepage-home-img" ng-src="{{homes.img_url}}">
+    </a>
     </div>
   <div class="featured-homes-info-card">
     <div class="featured-homes-price">

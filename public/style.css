@@ -5,21 +5,31 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00AEEF;
 }
 
-.form-contain{
+.btn-primary {
+  background-color: #00AEEF;
+  color: #FFFFFF;
+}
+
+
+.form-contain {
   margin: 0 auto;
   width: 40%;
 }
 
-.buyer-survey-anch{
+.buyer-survey-anch {
   color: white;
 }
 
 .signup-page-header {
   text-align: center;
   padding-bottom: 25px;
+}
+
+.radiobtn {
+  padding-top: 25px;
 }
 
 .login-form-page {
@@ -32,16 +42,12 @@ a {
   padding: 0px;
 }
 
-#action-item{
+#action-item {
   padding-bottom: 200px;
 }
 
-#action-item-button{
-  color: white;
-}
-
 .homepage-img {
-  background-image: url('https://goairportshuttle.com/images/site/slider-seattle-1.jpg');
+  background-image: url("./images/homematcher-home-banner.jpg");
   background-size:cover;
   padding-left: 0;
   padding-right: 0;
