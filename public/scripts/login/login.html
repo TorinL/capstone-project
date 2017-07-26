@@ -1,6 +1,6 @@
 <div class ="container-fluid">
-  <div class ="main-parent-div homepage-img">
-   <h1 id="main-slogan">Matching home owners to home buyers</h1>
+  <div class ="">
+   <h1 id="signinpage">Sign In</h1>
      <form class="login-form-page" ng-submit='$ctrl.login($ctrl.loginOpts)'>
      <div class="form-group-log-in">
        <label for="userEmailLogin"></label>
@@ -13,29 +13,4 @@
      <button type="submit" class="btn btn-primary">Submit</button>
    </form>
   </div>
-<div class="list-of-featured-homes secondary-info">
-    <div id="featured-homes-title">
-    <h2>Featured Homes</h2>
-  </div>
-  <div class="ang-parent-div" ng-repeat="homes in $ctrl.featuredHomes">
-    <a href="/listing">
-    <div class="featured-homes-image-card">
-    <img class="homepage-home-img" ng-src="{{homes.img_url}}">
-  </a>
-    </div>
-  <div class="featured-homes-info-card">
-    <div class="featured-homes-price">
-      <span>${{homes.home_value}}</span>
-    </div>
-    <div  class="featured-homes-address">
-      <span>{{homes.address}}</span>
-    </div>
-    <div class="featured-homes-details">
-      <span>{{homes.bedrooms}} Bed -</span>
-      <span>{{homes.bathrooms}} Bath -</span>
-      <span>{{homes.square_footage}} sqft</span>
-    </div>
-  </div>
-  </div>
-</div>
 </div>

@@ -4,7 +4,7 @@
 </a>
 <div class="collapse navbar-collapse" id="navbarText">
 <ul class="navbar-nav mr-auto">
-  <li class="nav-item active">
+  <li ng-if="$ctrl.user.id" class="nav-item active">
     <a class="nav-link" href="/dashboard">My Profile<span class="sr-only">(current)</span></a>
   </li>
 </ul>
@@ -14,11 +14,10 @@
   </li>
 </ul>
 <form class="form-inline">
-
-<button ng-if="!$ctrl.user.id" class="btn btn-outline-primary" type="button"><a href="/signup">Sign up</a></button>
+  <button ng-if="!$ctrl.user.id" class="btn btn-outline-primary" type="button"><a href="/signup">Sign up</a></button>
 </form>
 <form class="form-inline">
-<button ng-if="$ctrl.user.id" class="btn btn-outline-primary" type="button" ng-click="$ctrl.logout()">Sign Out</button>
+  <button ng-if="$ctrl.user.id" class="btn btn-outline-primary" type="button" ng-click="$ctrl.logout()">Sign Out</button>
 </form>
 </div>
 </nav>
